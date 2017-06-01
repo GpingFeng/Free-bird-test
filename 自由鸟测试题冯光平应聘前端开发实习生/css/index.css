@@ -1,0 +1,246 @@
+/*初始化CSS样式*/
+  body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+  body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+  h1, h2, h3, h4, h5, h6{ font-size:100%; }
+  address, cite, dfn, em, var { font-style:normal; }
+  code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+  small{ font-size:12px; }
+  ul, ol { list-style:none; }
+  a { text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  sup { vertical-align:text-top; }
+  sub{ vertical-align:text-bottom; }
+  legend { color:#000; }
+  fieldset, img { border:0; }
+  button, input, select, textarea { font-size:100%; }
+  table { border-collapse:collapse; border-spacing:0; }
+
+  html{
+  	font-size: 62.5%;
+  }
+
+@font-face {
+ font-family: 'PingFang-SC-Bold';
+ src: url('../fonts/PingFang-SC-Bold.ttf');
+}
+
+ /*container部分*/
+ #container{
+	 max-width: 980px;
+	 margin: 0 auto;
+	 overflow: hidden;
+	 font-family: 'PingFang-SC-Bold';
+ }
+
+ /*头部部分*/
+ #header{
+ 	width: 100%;
+ 	max-width: 980px;
+ 	background-image: url(../images/bg_1.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 50px;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	position: fixed;
+ 	top: 0px;
+ 	z-index: 9999;
+ }
+
+ #header>span.title{
+ 	font-size: 32px;
+ 	color: #fff;
+ 	font-weight: bold;
+ 	position: relative;
+ 	/*top: 38px;*/
+ }
+
+ /*banner部分*/
+ #banner{
+ 	position: relative;
+ 	top: 50px;
+ }
+
+ #banner .banner a img{
+ 	width: 100%;
+ 	/*height: 300px;*/
+ }
+
+ #banner .banner .banner_peonum{
+  	width: 100%;
+  	height: 50px;
+  	background: #ff4445;
+  	text-align: right;
+  	font-size: 24px;
+  	position: relative;
+  	top: 0px;
+  }
+
+ #banner .banner .banner_peonum span.peonum{
+ 	line-height: 50px;
+ 	padding-right: 30px;
+ 	color: #fff;
+ 	font-weight: bold; 
+ }
+
+/*swiper部分*/
+#swiper .expressionCon{
+	margin-top: 50px;
+	/*width: 100%;*/
+}
+
+#swiper .expressionCon .expressionCon-wrapper{
+	/*height: 186px;*/
+}
+
+#swiper .expressionCon .expressionCon-wrapper .swiper-slide img{
+	margin: 24px 18px;
+	width: 150px;
+}
+
+
+
+/*榜单部分*/
+#list #listTitle{
+	width: 100%;
+	height: 98px;
+}
+
+#list #listTitle{
+	border-top: 20px solid #f0f0f0;
+	border-bottom: 20px solid #f0f0f0;
+	position: relative;
+}
+
+#list #listTitle ul{
+	margin-left: 36px;
+	margin-top: 10px;
+}
+
+#list #listTitle ul li{
+	float: left;
+	padding-right: 40px;
+}
+
+#list #listTitle ul li a{
+	color: #333;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#list #listTitle ul li .bgList{
+	display: inline-block;
+	width: 32px;
+	height: 6px;
+	background: #ff4343;
+	position: relative;
+	top: -10px;
+	left: 5px;
+}
+
+#list .comments,#list .comments .comment{
+	width: 100%;
+}
+
+#list .comments .comment{
+	padding: 10px 10px;
+}
+
+#list .comments .comment .commentTit{
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+#list .comments .comment .commentTit img.head{
+	width: 60px;
+}
+
+#list .comments .comment .commentTit img.hat{
+	width: 35px;
+	position: absolute;
+    left: 40px;
+    /*top: 0px;*/
+    margin-top: -15px;
+}
+
+
+#list .comments .comment .commentCon{
+	width: 78%;
+	overflow: hidden;
+}
+
+#list .comments .comment .commentCon .name{
+	font-size: 2.5rem;
+	color: #999;
+}
+
+#list .comments .comment .commentCon .time{
+	font-size: 2rem;
+	color: #999;
+}
+
+#list .comments .comment .commentCon p.text{
+	font-size: 2rem;
+	color: #333;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+#list .comments .comment .commentCon img{
+	width: 100%;
+}
+
+#list .comments .comment .commentFooter{
+	width: 92%;
+	margin: 10px 10px 0px;
+	border-top: 1px solid #dedede;
+	height: 80px;
+	
+}
+
+#list .comments .comment{
+	border-top: 20px solid #f0f0f0;
+}
+
+#list .comments .comment1{
+	border-top: 0px;
+}
+
+#list .comments .comment .commentFooter .commentImg{
+	width: 48%;
+	float: left;
+	border-right: 1px solid #dedede;
+	text-align: center;
+	margin: 22px 0px;
+}
+
+.commentImg img,.likeImg img{
+	width: 40px;
+	vertical-align: text-bottom;
+}
+
+.commentImg .text,.likeImg .text{
+	padding-left: 20px;
+	font-size: 2.6rem;
+	color: #999;
+}
+
+#list .comments .comment .commentFooter .likeImg{
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin: 22px 0px;
+}
+
+#list .comments .more{
+	width: 100%;
+	background: #eee;
+	color: #999;
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	font-size: 2.4rem;
+	font-weight: bold;
+}
